@@ -22,7 +22,7 @@
         </li>
         <li class="nav-item" v-if="isUserAuthenticated">
          <button class="btn btn-outline-danger my-2 my-sm-0" @click="onLogout">Logout</button>
-        </li> 
+        </li>
         <div class="logedIn" v-else>
           <li class="nav-item">
             <router-link class="nav-link" to="/login">Login</router-link>
@@ -31,6 +31,7 @@
             <router-link class="nav-link" to="/register">Register <span class="sr-only">(current)</span></router-link>
           </li>
         </div>
+
       </ul>
     </div>
   </nav>
@@ -65,4 +66,5 @@ export default {
     display: flex;
     flex-direction: row;
   }
+  
 </style>

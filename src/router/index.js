@@ -4,6 +4,10 @@ import VueRouter from 'vue-router'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import AllShops from '../views/AllShops.vue'
+import AllManagers from '../views/AllManagers.vue'
+import SingleManager from '../views/SingleManager'
+import SingleShop from '../views/SingleShop'
+
 import store from './../store/index'
 
 
@@ -23,13 +27,28 @@ const routes = [
       guest:true
     }
   },
-  {
-    path: '/register',
+  { 
+    path:'/register',
     name: 'register',
     component: Register,
     meta: {
       guest:true
     }
+  },
+  {
+    path: '/managers',
+    name: 'managers',
+    component: AllManagers,
+  },
+  {
+    path: '/single-manager',
+    name: 'single-manager',
+    component: SingleManager,
+  },
+  {
+    path: '/single-shop',
+    name: 'single-shop',
+    component: SingleShop,
   }
 
 ]

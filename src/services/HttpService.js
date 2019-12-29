@@ -6,7 +6,7 @@ const BASE_URL =  axios.defaults.baseURL = 'http://localhost:8000/api/'
     constructor() {
         this.configureAxios(
             BASE_URL, { 
-            accept:'application/json', 
+            accept:'application/json',
             Authorization: `Bearer ${localStorage.getItem('token')}`,
             }
         )
